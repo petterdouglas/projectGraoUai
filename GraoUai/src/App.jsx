@@ -1,12 +1,20 @@
-import {} from 'react'
+// Components
+import Footer from './components/Footer'
+import Navbar from './components/navbar'
+import Mainpage from './pages/mainpage'
+
+
+// Styles
 import './styles/app.sass'
 
 function App() {
 
   return (
-    <>
-      <div><p>Hello World!!</p></div>
-    </>
+    <div>
+      <Navbar />
+      <Mainpage />
+      <Footer />
+    </div>
   )
 }
 
