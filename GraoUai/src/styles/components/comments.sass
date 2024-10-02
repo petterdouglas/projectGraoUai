@@ -1,0 +1,83 @@
+@use '../mixins'
+@use '../variables'
+
+.comment
+    @include mixins.flex-center
+    flex-direction: column
+    width: 100%
+    height: fit-content
+    padding: 50px
+    gap: 20px
+    h1
+        @include mixins.adelia
+        font-size: 50px
+        color: #ffffff
+        text-shadow: .8px .8px black, -.8px .8px black, .8px -.8px black, -.8px -.8px black
+    .comments-contents
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 30px
+        width: 65%
+        padding: 40px
+        border-radius: 30px
+        text-align: center
+        position: relative
+        .aspas-top
+            position: absolute
+            top: 10%
+            left: 5%
+        .aspas-bottom
+            position: absolute
+            bottom: 10%
+            right: 5%
+
+    .btn_container
+        display: flex
+        gap: 10px
+        .btn
+            background-color: transparent
+            cursor: pointer
+
+.comment1
+    background-image: url('../../assets/depoimentos1-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom
+    h2
+        font-size: 22px
+        color: variables.$dark_brown
+        width: 80%
+    p
+        color: #ffffff
+    span
+        color: variables.$dark_brown
+        @include mixins.poppins-bold
+    .comments-contents1
+        background-color: variables.$light_brown
+
+.comment2
+    background-image: url('../../assets/depoimentos2-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom
+    h2
+        font-size: 22px
+        color: variables.$dark_green
+        width: 80%
+    p
+        color: #ffffff
+    span
+        color: variables.$dark_green
+        @include mixins.poppins-bold
+    .comments-contents2
+        background-color: variables.$green
+
+.fade-transition
+    transition: opacity 0.25s ease-in-out
+
+.hidden
+    opacity: .8
+
+.visible
+    opacity: 1

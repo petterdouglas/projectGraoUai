@@ -1,7 +1,10 @@
+import '../styles/components/footer.sass'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="footer_container">
+      <p>2024 &copy; Grão Uai. Todos os direitos reservados.</p>
+    </div>
   )
 }
 

@@ -1,0 +1,44 @@
+@use '../mixins'
+@use '../variables'
+
+.process_container
+    width: 100%
+    height: fit-content
+    padding: 0
+    @include mixins.flex-center
+    flex-direction: column
+    text-align: center
+    .process-title
+        @include mixins.flex-center
+        flex-direction: column
+        font-size: 30px
+        color: variables.$dark_brown
+        margin: 30px 0
+    .process-contents
+        list-style: none
+        display: flex
+        width: 100%
+        position: relative
+        color: variables.$dark_brown
+        .process
+            @include mixins.flex-center
+            flex-direction: column
+            text-align: center
+            justify-content: flex-start
+            padding: 80px 20px
+            width: 20%
+            gap: 20px
+            h2
+                font-size: 20px
+                width: 90%
+            span
+                font-weight: bold
+            .process--p
+                margin: auto
+                width: 90%
+                font-size: 16px
+                text-align: center        
+        .process2, .process4
+            color: variables.$cream
+            background-color: variables.$dark_brown
+            

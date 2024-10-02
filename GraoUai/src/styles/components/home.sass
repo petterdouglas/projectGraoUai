@@ -1,0 +1,39 @@
+@use '../mixins'
+@use '../variables'
+
+.home
+    width: 100%
+    .espaçamento
+        height: 80px
+    .home_container
+        width: 100%
+        height: 85vh
+        padding: 60px 60px 0
+        background-image: url('../../assets/home-bg.png')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        color: #ffffff
+        display: flex
+        flex-direction: column
+        gap: 20px
+        .home-title
+            width: 60%
+            @include mixins.adelia
+        .home-content
+            width: 65%
+            @include mixins.poppins-regular
+            font-size: 22px
+        #home-btn
+            width: fit-content
+            @include mixins.flex-center
+            border-top-right-radius: 10px
+            border-bottom-left-radius: 10px
+            background-color: variables.$light_brown
+            a
+                padding: 12px 20px
+                text-decoration: none
+                color: variables.$dark_brown
+                @include mixins.poppins-bold
+            &:hover
+                background-color: variables.$cream
