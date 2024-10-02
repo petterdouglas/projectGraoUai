@@ -1,8 +1,8 @@
 // components
-import About from "../components/about"
+import About from "../components/About"
 import Comments from "../components/Comments"
 import Contacts from "../components/Contacts"
-import Home from "../components/home"
+import Home from "../components/Home"
 import Impacts from "../components/Impacts"
 import Process from "../components/Process"
 
