@@ -1,0 +1,173 @@
+.impacts_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110vh;
+  padding: 50px 20px 100px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 50px;
+  background-image: url("../../img/impactos-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.impacts_container .impacts-title {
+  font-family: "Adelia", sans-serif;
+  font-size: 50px;
+}
+.impacts_container .impacts-content {
+  background-color: #351C0A;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 70%;
+  padding: 50px 60px;
+  border-radius: 30px;
+}
+.impacts_container .impacts-details {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  height: 240px;
+  justify-content: space-evenly;
+}
+.impacts_container .impacts-details li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 30px;
+}
+.impacts_container .impacts-details li h2 {
+  font-size: 22px;
+}
+.impacts_container .impacts-details li p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.impacts_container .impacts-details #familias {
+  background-color: rgb(164, 113, 65);
+}
+.impacts_container .impacts-details #renda {
+  background-color: rgb(89, 59, 33);
+  color: #ffffff;
+}
+.impacts_container .impacts-details #producao {
+  background-color: #351C0A;
+  color: #ffffff;
+}
+
+@media (min-width: 620px) and (max-width: 980px) {
+  .impacts_container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 50px 20px 100px;
+    gap: 50px;
+  }
+  .impacts_container .impacts-title {
+    font-family: "Adelia", sans-serif;
+    font-size: 50px;
+  }
+  .impacts_container .impacts-content {
+    width: 80%;
+    padding: 40px 50px;
+  }
+  .impacts_container .impacts-details li {
+    width: 30%;
+  }
+  .impacts_container .impacts-details li h2 {
+    font-size: 16px;
+  }
+  .impacts_container .impacts-details li img {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 375px) and (max-width: 620px) {
+  .impacts_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px 30px 80px;
+    flex-direction: column;
+    align-content: center;
+    gap: 26px;
+    background-image: url("../../img/impactos-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .impacts_container .impacts-title {
+    font-family: "Adelia", sans-serif;
+    text-align: center;
+    font-size: 35px;
+  }
+  .impacts_container .impacts-content {
+    background-color: #351C0A;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    font-size: 14px;
+    padding: 40px;
+    border-radius: 30px;
+  }
+  .impacts_container .impacts-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 24px;
+  }
+  .impacts_container .impacts-details li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    width: 80%;
+    height: 240px;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .impacts_container .impacts-details li h2 {
+    width: 90%;
+    font-size: 20px;
+  }
+  .impacts_container .impacts-details li p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .impacts_container .impacts-details #familias {
+    background-color: rgb(164, 113, 65);
+  }
+  .impacts_container .impacts-details #renda {
+    background-color: rgb(89, 59, 33);
+    color: #ffffff;
+  }
+  .impacts_container .impacts-details #producao {
+    background-color: #351C0A;
+    color: #ffffff;
+  }
+}/*# sourceMappingURL=impacts.css.map */

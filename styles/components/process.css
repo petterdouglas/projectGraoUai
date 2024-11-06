@@ -1,0 +1,197 @@
+.process_container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.process_container .process-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: #351C0A;
+  margin: 30px 0;
+}
+.process_container .process-contents {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  position: relative;
+  color: #351C0A;
+}
+.process_container .process-contents .process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  padding: 80px 20px;
+  width: 20%;
+  height: 80vh;
+  gap: 20px;
+}
+.process_container .process-contents .process h2 {
+  font-size: 24px;
+  width: 90%;
+}
+.process_container .process-contents .process span {
+  font-weight: bold;
+}
+.process_container .process-contents .process .process--p {
+  margin: auto;
+  width: 90%;
+  font-size: 18px;
+  text-align: center;
+}
+.process_container .process-contents .process2, .process_container .process-contents .process4 {
+  color: rgb(255, 222, 197);
+  background-color: #351C0A;
+}
+
+@media (min-width: 763px) and (max-width: 1120px) {
+  .process_container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: rgba(164, 113, 65, 0.5);
+    padding: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .process_container .process-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: #351C0A;
+    margin: 30px 0;
+  }
+  .process_container .process-contents {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #351C0A;
+  }
+  .process_container .process-contents .process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 80px 20px;
+    width: 30%;
+    height: 680px;
+    gap: 20px;
+  }
+  .process_container .process-contents .process h2 {
+    font-size: 24px;
+    width: 90%;
+  }
+  .process_container .process-contents .process span {
+    font-weight: bold;
+  }
+  .process_container .process-contents .process .process--p {
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .process_container .process-contents .process2, .process_container .process-contents .process4 {
+    color: rgb(255, 222, 197);
+    background-color: #351C0A;
+  }
+  .process_container .process-contents .process3, .process_container .process-contents .process1, .process_container .process-contents .process5 {
+    color: #351C0A;
+    background-color: rgb(255, 222, 197);
+  }
+  .process_container .process-contents .process4, .process_container .process-contents .process5 {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 375px) and (max-width: 760px) {
+  .process_container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(164, 113, 65, 0.5);
+    flex-direction: column;
+    text-align: center;
+  }
+  .process_container .process-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 26px;
+    padding: 20px 0;
+    line-height: 45px;
+    color: #351C0A;
+    margin: 30px 0;
+  }
+  .process_container .process-contents {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0 0 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #351C0A;
+  }
+  .process_container .process-contents .process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 35px 20px;
+    width: 45%;
+    height: 80vh;
+    gap: 20px;
+  }
+  .process_container .process-contents .process h2 {
+    font-size: 20px;
+    width: 90%;
+  }
+  .process_container .process-contents .process span {
+    font-weight: bold;
+  }
+  .process_container .process-contents .process .process--p {
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .process_container .process-contents .process2, .process_container .process-contents .process4 {
+    color: rgb(255, 222, 197);
+    background-color: #351C0A;
+  }
+  .process_container .process-contents .process3, .process_container .process-contents .process1, .process_container .process-contents .process5 {
+    color: #351C0A;
+    background-color: rgb(255, 222, 197);
+  }
+  .process_container .process-contents .process3, .process_container .process-contents .process4, .process_container .process-contents .process5 {
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=process.css.map */

@@ -1,0 +1,151 @@
+@use '../mixins'
+@use '../variables'
+
+.nav_container
+    width: 100%
+    height: 100px
+    background-color: variables.$cream
+    display: flex
+    align-items: center
+    padding: 0 60px
+    position: fixed
+    z-index: 2
+    #logo
+        @include mixins.flex-center
+    #barra_lateral
+        display: none
+    .nav_sections
+        display: flex
+        justify-content: right
+        list-style: none
+        gap: 70px
+        flex-grow: 1
+        font-size: 22px
+        a
+            @include mixins.poppins-semibold
+            color: variables.$brown
+            text-decoration: none
+            padding: 8px 12px
+            border-bottom: 2px solid transparent
+            transition: border-bottom 0.3s ease
+            &:hover
+                border-bottom: 2px solid
+
+@media (min-width: 720px) and (max-width: 1200px)
+
+    .nav_container
+        width: 100vw
+        height: 90px
+        background-color: variables.$cream
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0 0 0 60px
+        position: fixed
+        z-index: 2
+        #logo
+            width: 120px
+            @include mixins.flex-center
+            img
+                width: 200px
+        #barra_lateral
+            background-color: transparent
+            display: flex
+            position: absolute
+            right: 30px
+            cursor: pointer
+        .nav_sections
+            display: none
+        .nav_sections-active
+            @include mixins.flex-center
+            width: 50vw
+            position: absolute
+            top: 90px
+            right: 0
+            background-color: variables.$cream
+            padding: 20px 30px 30px
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            flex-grow: 0
+            gap: 30px
+            font-size: 20px
+            li
+                @include mixins.flex-center
+            a, li
+                width: 100%
+                height: 50px
+                @include mixins.poppins-semibold
+                color: variables.$brown
+                text-decoration: none
+                border-bottom: 2px solid transparent
+                transition: border-bottom 0.3s ease
+                &:hover
+                    border: none
+                    border-radius: 20px
+                    background-color: variables.$brown
+                    color: variables.$cream
+            a
+                @include mixins.flex-center
+
+@media (min-width: 375px) and (max-width: 720px)
+    .nav_container
+        width: 100vw
+        height: 65px
+        background-color: variables.$cream
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0 0 0 60px
+        position: fixed
+        z-index: 2
+        #logo
+            width: 80px
+            @include mixins.flex-center
+            img
+                width: 140px
+        #barra_lateral
+            background-color: transparent
+            display: flex
+            position: absolute
+            right: 20px
+            cursor: pointer
+            img
+                width: 40px
+        .nav_sections
+            display: none
+        .nav_sections-active
+            @include mixins.flex-center
+            width: 70vw
+            position: absolute
+            top: 65px
+            right: 0
+            background-color: variables.$cream
+            padding: 20px 30px 30px
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            flex-grow: 0
+            gap: 30px
+            font-size: 16px
+            li
+                @include mixins.flex-center
+            a, li
+                width: 100%
+                height: 45px
+                @include mixins.poppins-semibold
+                color: variables.$brown
+                text-decoration: none
+                border-bottom: 2px solid transparent
+                transition: border-bottom 0.3s ease
+                &:hover
+                    border: none
+                    border-radius: 20px
+                    background-color: variables.$brown
+                    color: variables.$cream
+            a
+                @include mixins.flex-center

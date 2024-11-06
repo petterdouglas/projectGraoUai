@@ -1,0 +1,256 @@
+@use '../mixins'
+@use '../variables'
+
+.comments_container
+    height: 760px
+    overflow: hidden
+    position: relative
+    .comment
+        position: absolute
+        @include mixins.flex-center
+        flex-direction: column
+        width: 100%
+        padding: 50px
+        gap: 20px
+        opacity: 0
+        transition: opacity 0.8s ease-in-out
+
+        &.active
+            opacity: 1
+            z-index: 1
+
+        h1
+            @include mixins.adelia
+            font-size: 50px
+            color: #ffffff
+            text-shadow: .8px .8px black, -.8px .8px black, .8px -.8px black, -.8px -.8px black
+        .comments-contents
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 30px
+            width: 65%
+            padding: 40px
+            border-radius: 30px
+            text-align: center
+            position: relative
+            .aspas-top
+                position: absolute
+                top: 10%
+                left: 5%
+            .aspas-bottom
+                position: absolute
+                bottom: 10%
+                right: 5%
+
+        .btn_container
+            display: flex
+            gap: 10px
+            .btn
+                background-color: transparent
+                cursor: pointer
+
+    .comment1
+        height: 100%
+        background-image: url('../../img/depoimentos1-bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: bottom
+        h2
+            font-size: 22px
+            color: variables.$dark_brown
+            width: 80%
+        p
+            color: #ffffff
+        span
+            color: variables.$dark_brown
+            @include mixins.poppins-bold
+        .comments-contents1
+            background-color: variables.$light_brown
+
+    .comment2
+        height: 100%
+        background-image: url('../../img/depoimentos2-bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: bottom
+        h2
+            font-size: 22px
+            color: variables.$dark_green
+            width: 80%
+        p
+            color: #ffffff
+        span
+            color: variables.$dark_green
+            @include mixins.poppins-bold
+        .comments-contents2
+            background-color: variables.$green
+
+@media (min-width: 760px) and (max-width: 980px)
+    .comments_container
+        .comment
+            @include mixins.flex-center
+            flex-direction: column
+            width: 100%
+            padding: 50px
+            gap: 20px
+            h1
+                @include mixins.adelia
+                font-size: 50px
+                color: #ffffff
+                text-shadow: .8px .8px black, -.8px .8px black, .8px -.8px black, -.8px -.8px black
+            .comments-contents
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 30px
+                width: 90%
+                padding: 40px
+                border-radius: 30px
+                text-align: center
+                position: relative
+                .aspas-top
+                    position: absolute
+                    top: 10%
+                    left: 5%
+                .aspas-bottom
+                    position: absolute
+                    bottom: 10%
+                    right: 5%
+
+            .btn_container
+                display: flex
+                gap: 10px
+                .btn
+                    background-color: transparent
+                    cursor: pointer
+
+        .comment1
+            height: 100%
+            background-image: url('../../img/depoimentos1-bg.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: bottom
+            opacity: 1
+            visibility: visible
+            h2
+                font-size: 22px
+                color: variables.$dark_brown
+                width: 80%
+            p
+                color: #ffffff
+            span
+                color: variables.$dark_brown
+                @include mixins.poppins-bold
+            .comments-contents1
+                background-color: variables.$light_brown
+
+        .comment2
+            height: 100%
+            background-image: url('../../img/depoimentos2-bg.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: bottom
+            h2
+                font-size: 22px
+                color: variables.$dark_green
+                width: 80%
+            p
+                color: #ffffff
+            span
+                color: variables.$dark_green
+                @include mixins.poppins-bold
+            .comments-contents2
+                background-color: variables.$green
+
+@media (min-width: 375px) and (max-width: 760px)
+
+    .comments_container
+        height: 750px
+        .comment
+            @include mixins.flex-center
+            flex-direction: column
+            width: 100%
+            padding: 30px 10px
+            gap: 20px
+            h1
+                @include mixins.adelia
+                font-size: 40px
+                color: #ffffff
+                text-shadow: .8px .8px black, -.8px .8px black, .8px -.8px black, -.8px -.8px black
+            .comments-contents
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 20px
+                width: 90%
+                height: 450px
+                padding: 30px
+                border-radius: 30px
+                text-align: center
+                position: relative
+                .aspas-top
+                    position: absolute
+                    top: 20px
+                    left: 20px
+                .aspas-bottom
+                    position: absolute
+                    bottom: 20px
+                    right: 20px
+
+            .btn_container
+                display: flex
+                gap: 10px
+                .btn
+                    background-color: transparent
+                    cursor: pointer
+
+        .comment1
+            height: 100%
+            background-image: url('../../img/depoimentos1-bg.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: bottom
+            h2
+                font-size: 20px
+                color: variables.$dark_brown
+                width: 100%
+            p
+                width: 100%
+                font-size: 14px
+                color: #ffffff
+            span
+                color: variables.$dark_brown
+                @include mixins.poppins-bold
+            .comments-contents1
+                background-color: variables.$light_brown
+
+        .comment2
+            height: 100%
+            background-image: url('../../img/depoimentos2-bg.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: bottom
+            h2
+                font-size: 20px
+                color: variables.$dark_green
+                width: 80%
+            p
+                width: 100%
+                font-size: 14px
+                color: #ffffff
+            span
+                color: variables.$dark_green
+                @include mixins.poppins-bold
+            .comments-contents2
+                background-color: variables.$green
+
+        .fade-transition
+            transition: opacity 0.25s ease-in-out
+
+        .hidden
+            opacity: .8
+
+        .visible
+            opacity: 1

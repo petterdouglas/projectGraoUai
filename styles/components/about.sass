@@ -1,0 +1,126 @@
+@use '../mixins'
+@use '../variables'
+
+.about_container
+    width: 100%
+    height: 100vh
+    background-color: variables.$dark_brown
+    padding: 80px 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    .section_content
+        width: 50%
+        height: 70%
+        @include mixins.flex-center
+        flex-direction: column
+        padding: 40px 30px
+        background-color: variables.$cream
+        text-align: justify
+        box-shadow: 20px 20px 0 variables.$light_brown
+        z-index: 1
+        h2
+            color: variables.$light_brown
+            font-size: 16px
+        h1
+            color: variables.$dark_brown
+            font-size: 42px
+        p
+            margin: 30px 0
+            width: 95%
+            font-size: 18px
+    .section_photos
+
+        position: relative
+        z-index: 0
+        display: flex
+        height: fit-content
+        gap: 20px
+        .photos
+            display: flex
+            flex-direction: column
+            gap: 20px
+            justify-content: space-around
+
+@media (min-width: 760px) and (max-width: 1400px)
+    .about_container
+        width: 100%
+        height: fit-content
+        background-color: variables.$dark_brown
+        padding: 80px 30px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .section_content
+            width: 90%
+            height: 70%
+            @include mixins.flex-center
+            flex-direction: column
+            margin-bottom: 60px
+            background-color: variables.$cream
+            text-align: justify
+            box-shadow: 20px 20px 0 variables.$light_brown
+            z-index: 1
+        .section_photos
+            position: relative
+            z-index: 0
+            @include mixins.flex-center
+            width: fit-content
+            height: fit-content
+            gap: 0
+            .photos
+                flex-direction: row
+                gap: 20px
+                padding: 0
+                justify-content: center
+                align-items: center
+
+                #img1, #img2
+                    width: 40vw
+
+                #img3
+                    display: none
+
+@media (min-width: 375px) and (max-width: 760px)
+    .about_container
+        width: 100%
+        height: fit-content
+        background-color: variables.$dark_brown
+        padding: 80px 30px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .section_content
+            width: 100%
+            height: 70%
+            @include mixins.flex-center
+            flex-direction: column
+            margin-bottom: 0
+            background-color: variables.$cream
+            text-align: justify
+            box-shadow: none
+            outline: 10px solid variables.$light_brown
+            z-index: 1
+            h2
+                color: variables.$light_brown
+                font-size: 16px
+            h1
+                color: variables.$dark_brown
+                font-size: 42px
+            p
+                margin: 30px 0
+                width: 95%
+                font-size: 16px
+        .section_photos
+            position: relative
+            z-index: 0
+            @include mixins.flex-center
+            width: fit-content
+            height: fit-content
+            gap: 0
+            .photos
+                display: none
+                #img1, #img2, #img3
+                    display: none

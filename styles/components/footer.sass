@@ -1,0 +1,22 @@
+@use '../mixins'
+@use '../variables'
+
+.footer_container
+    @include mixins.flex-center
+    width: 100%
+    height: fit-content
+    padding: 35px
+    background-color: variables.$dark_brown
+    p
+        color: #ffffff
+
+@media (min-width: 325px) and (max-width: 720px)
+    .footer_container
+        @include mixins.flex-center
+        width: 100%
+        height: fit-content
+        padding: 30px
+        background-color: variables.$dark_brown
+        p
+            font-size: 12px
+            color: #ffffff

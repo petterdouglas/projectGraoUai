@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/Logo.png" />
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/home.css">
+    <link rel="stylesheet" href="styles/components/comments.css">
+    <link rel="stylesheet" href="styles/components/contacts.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <link rel="stylesheet" href="styles/components/impacts.css">
+    <link rel="stylesheet" href="styles/components/process.css">
+    <link rel="stylesheet" href="styles/components/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Grão UAI | Qualidade e Compromisso</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class='nav_container'>
+            <a href='#home' id='logo'><img src='./img/graoUAI-logo.png' alt="Logo Grão Uai" width='220px' /></a>
+            <button id="barra_lateral"><img src="./img/sidebar.png" alt="Logo" width="50px"></button>
+            <ul class='nav_sections'>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#process">Nossos Processos</a></li>
+                <li><a href="#comments">Depoimentos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id='home' class='home'>
+            <div class='espaçamento'>
+            </div>
+            <div class="home_container">
+                <h1 class="home-title">Saboreie o autêntico café de Lavras com o Grão Uai</h1>
+                <h2 class="home-content">Cultivado com amor e práticas sustentáveis, nosso café especial conecta
+                    você à origem e à tradição. Siga-nos no Instagram e descubra o verdadeiro sabor do café!</h2>
+                <button id="home-btn"><a href="#contacts" onClick={handleScroll}>Entrar em Contato</a></button>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <div id='impacts' class="impacts_container">
+            <h1 class="impacts-title">Impactos gerados</h1>
+            <p class='impacts-content'>O Grão Uai impactou três famílias em Lavras e região, gerando mais de R$
+                4.000 de renda no último ano. Ofereceu capacitações gratuitas focadas na qualidade do café, garantindo
+                valorização na venda e, com práticas de comércio justo, aumentou em 336% o valor da produção para
+                pequenos produtores.</p>
+            <ul class="impacts-details">
+                <li id='familias'>
+                    <h2>Famílias Impactadas</h2>
+                    <img src='./img/familias-icon.png' alt="Famílias" width='80px' />
+                    <p>3</p>
+                </li>
+                <li id='renda'>
+                    <h2>Renda Anual</h2>
+                    <img src='./img/renda-icon.png' alt="Renda" width='80px' />
+                    <p>+R$4000,00</p>
+                </li>
+                <li id='producao'>
+                    <h2>Valor da produção</h2>
+                    <img src='./img/producao-icon.png' alt="Produção" width='80px' />
+                    <p>+336%</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <div id='about' class="about_container">
+            <div class='section_content'>
+                <h2>Venha conhecer</h2>
+                <h1>Sobre Nós</h1>
+                <img src='./img/sobre-detalhe.png' alt="........" width='200px' />
+                <p>
+                    O Grão Uai surgiu durante a pandemia como parte do projeto Uai Café da Enactus UFLA, com o objetivo
+                    de apoiar pequenos produtores de café especial em Lavras, Minas Gerais. A marca cresceu através de
+                    parcerias estratégicas e participações em editais, fornecendo recursos para melhorar a qualidade do
+                    café e incentivar práticas sustentáveis. Hoje, o Grão Uai combina tradição e inovação, gerando
+                    impacto positivo nas comunidades e oferecendo um café de alta qualidade, comprometido com o
+                    desenvolvimento social e ambiental.
+                </p>
+            </div>
+            <div class='section_photos'>
+                <div class='photos'>
+                    <img id='img1' src='./img/sobre1-bg.png' alt="img1" width='340px' height='300px' />
+                    <img id='img2' src='./img/sobre2-bg.png' alt="img2" width='340px' height='300px' />
+                </div>
+                <div class='photos'>
+                    <img id='img3' src='./img/sobre3-bg.png' alt="img3" width='340px' height='620px' />
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <div id='process' class="process_container">
+            <div class='process-title'>
+                <h1>Nossos Processos</h1>
+            </div>
+            <ul class='process-contents'>
+                <li class='process1 process'>
+                    <img src='./img/1.png' alt="primeiro" width='80px' />
+                    <h2>Seleção de Produtores</h2>
+                    <p class='process--p'>Trabalhamos com pequenos agricultores que cultivam <span>cafés
+                            especiais</span> com práticas <span>sustentáveis</span> adquiridas por meio das nossas
+                        capacitações, <span>valorizando</span> a <span>agricultura</span> local.</p>
+                </li>
+                <li class='process2 process'>
+                    <img src='./img/2.png' alt="segundo" width='80px' />
+                    <h2>Qualidade Garantida</h2>
+                    <p class='process--p'>Cada grão é <span>cuidadosamente</span> armazenado e processado para
+                        <span>preservar</span> a frescura e o sabor, mantendo o padrão de <span>excelência</span>.
+                    </p>
+                </li>
+                <li class='process3 process'>
+                    <img src='./img/3.png' alt="terceiro" width='80px' />
+                    <h2>Embalagem com Propósito</h2>
+                    <p class='process--p'>Nossas embalagens <span>sustentáveis</span> protegem o café e contam a
+                        <span>história</span> de cada <span>produtor</span>, levando mais que um produto: uma
+                        <span>experiência</span>.
+                    </p>
+                </li>
+                <li class='process4 process'>
+                    <img src='./img/4.png' alt="quarto" width='80px' />
+                    <h2>Entrega Rápida e Eficiente</h2>
+                    <p class='process--p'>Garantimos que o café chegue até você com <span>agilidade</span>,
+                        preservando toda sua <span>qualidade</span> e <span>frescor</span>.</p>
+                </li>
+                <li class='process5 process'>
+                    <img src='./img/5.png' alt="quinto" width='80px' />
+                    <h2>Atendimento Dedicado</h2>
+                    <p class='process--p'>Desde a compra até o pós-venda, <span>cuidamos</span> de cada
+                        <span>detalhe</span> para oferecer uma <span>experiência</span> única e <span>completa</span>.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <section class="comments_container">
+            <div id="comments">
+                <div class="fade-transition">
+                    <section class="comment comment1">
+                        <h1>Depoimentos</h1>
+                        <div class='comments-contents comments-contents1'>
+                            <img class='aspas-top' src='./img/aspas.png' alt="" width='40px' />
+                            <h2>Como se concretiza a parceria entre o
+                                Uai Café e o produtor?</h2>
+                            <p>A parceria com a Uai Café traz dois grandes benefícios: a valorização e a divulgação do
+                                nosso
+                                produto. Temos autonomia para definir o preço da saca, ao contrário de outros
+                                compradores
+                                que impõem
+                                o valor. Além disso, nosso café é divulgado em diversos estados, cidades e eventos,
+                                permitindo que
+                                os consumidores conheçam a origem e o trabalho da nossa família, a Família Morais, que
+                                produz os
+                                Cafés Carmelita de forma sustentável.</p>
+                            <p><span>Rayane Morais, cafeicultora</span></p>
+                            <img class='aspas-bottom' src='./img/aspas.png' alt="" width='40px' />
+                        </div>
+                        <div class='btn_container'>
+                            <button class='btn'><img src='./img/btn-1.png' alt='#' /></button>
+                            <button class='btn btn2'><img src='./img/transparent-btn.png' alt='#' /></button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="comments">
+                <div>
+                    <section class="comment comment2">
+                        <h1>Depoimentos</h1>
+                        <div class='comments-contents comments-contents2'>
+                            <img class='aspas-top' src='./img/aspas.png' alt="" width='40px' />
+                            <h2>Como se concretiza a parceria entre o
+                                Uai Café e o produtor?</h2>
+                            <p>Quando tenho os cafés beneficiados prontos para venda, com laudo, notas sensoriais e
+                                pontuação, entro em contato com a Uai Café. Eles perguntam o valor da saca e a
+                                quantidade
+                                desejada, e eu calculo o preço de venda do café especial. Em seguida, combinamos a
+                                entrega e
+                                o pagamento. A Uai Café comercializa nosso café sob sua marca, mencionando nossa família
+                                e a
+                                origem do café nas embalagens.</p>
+                            <p><span>Fernando Morais, cafeicultor</span></p>
+                            <img class='aspas-bottom' src='./img/aspas.png' alt="" width='40px' />
+                        </div>
+                        <div class='btn_container'>
+                            <button class='btn btn1'><img src='./img/transparent-btn.png' alt='#' /></button>
+                            <button class='btn'><img src='./img/btn-2.png' alt='#' /></button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <div id='contacts' class='contacts'>
+            <img id='ramo1' src='./img/folhaDeCafe.png' alt="" width='240px' />
+            <div class='contacts_container'>
+                <img src='./img/Logo.png' alt="Logo" width='110px' />
+                <h1>Contatos</h1>
+                <section class='contacts-contents'>
+                    <section class='content1'>
+                        <div class='adress'>
+                            <h2>Endereço local</h2>
+                            <p>
+                                Sala Enactus UFLA, localizada na Universidade Federal de Lavras (Lavras - MG)
+                            </p>
+                        </div>
+                        <div class="hour">
+                            <h2>Horário de funcionamento</h2>
+                            <p>Seg a Sábado: 08h às 18h</p>
+                        </div>
+                    </section>
+                    <img id="barra" src='./img/Barra.png' alt="" />
+                    <section class='content2'>
+                        <div class='points'>
+                            <h2>Endereço local</h2>
+                            <p>
+                                Sala Enactus UFLA, localizada na Universidade Federal de Lavras (Lavras - MG)
+                            </p>
+                        </div>
+                        <div class="mail">
+                            <h2>Horário de funcionamento</h2>
+                            <p>Seg a Sábado: 08h às 18h</p>
+                        </div>
+                    </section>
+                </section>
+                <div class='contacts-btn'>
+                    <div><a href="#"><img src='./img/WhatsappLogo.png' alt="Whatsapp" width='70px' /></a></div>
+                    <div><a href="#"><img src='./img/InstagramLogo.png' alt="Instagram" width='70px' /></a></div>
+                </div>
+            </div>
+            <img id='ramo2' src='./img/folhaDeCafe2.png' alt="" width='280px' />
+        </div>
+
+
+    </main>
+    <footer class="footer_container">
+        <p>2024 &copy; Grão Uai. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts/barra_lateral.js"></script>
+    <script src="scripts/comments.js"></script>
+</body>
+
+</html>

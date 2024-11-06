@@ -1,0 +1,199 @@
+.nav_container {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 222, 197);
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  position: fixed;
+  z-index: 2;
+}
+.nav_container #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_container #barra_lateral {
+  display: none;
+}
+.nav_container .nav_sections {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  gap: 70px;
+  flex-grow: 1;
+  font-size: 22px;
+}
+.nav_container .nav_sections a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(89, 59, 33);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+.nav_container .nav_sections a:hover {
+  border-bottom: 2px solid;
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+  .nav_container {
+    width: 100vw;
+    height: 90px;
+    background-color: rgb(255, 222, 197);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 60px;
+    position: fixed;
+    z-index: 2;
+  }
+  .nav_container #logo {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_container #logo img {
+    width: 200px;
+  }
+  .nav_container #barra_lateral {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
+  .nav_container .nav_sections {
+    display: none;
+  }
+  .nav_container .nav_sections-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: rgb(255, 222, 197);
+    padding: 20px 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 0;
+    gap: 30px;
+    font-size: 20px;
+  }
+  .nav_container .nav_sections-active li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_container .nav_sections-active a, .nav_container .nav_sections-active li {
+    width: 100%;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(89, 59, 33);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+  }
+  .nav_container .nav_sections-active a:hover, .nav_container .nav_sections-active li:hover {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(89, 59, 33);
+    color: rgb(255, 222, 197);
+  }
+  .nav_container .nav_sections-active a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 375px) and (max-width: 720px) {
+  .nav_container {
+    width: 100vw;
+    height: 65px;
+    background-color: rgb(255, 222, 197);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 60px;
+    position: fixed;
+    z-index: 2;
+  }
+  .nav_container #logo {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_container #logo img {
+    width: 140px;
+  }
+  .nav_container #barra_lateral {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+  .nav_container #barra_lateral img {
+    width: 40px;
+  }
+  .nav_container .nav_sections {
+    display: none;
+  }
+  .nav_container .nav_sections-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: rgb(255, 222, 197);
+    padding: 20px 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 0;
+    gap: 30px;
+    font-size: 16px;
+  }
+  .nav_container .nav_sections-active li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_container .nav_sections-active a, .nav_container .nav_sections-active li {
+    width: 100%;
+    height: 45px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(89, 59, 33);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+  }
+  .nav_container .nav_sections-active a:hover, .nav_container .nav_sections-active li:hover {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(89, 59, 33);
+    color: rgb(255, 222, 197);
+  }
+  .nav_container .nav_sections-active a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=navbar.css.map */
