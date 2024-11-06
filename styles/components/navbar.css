@@ -44,7 +44,7 @@
 @media (min-width: 720px) and (max-width: 1200px) {
   .nav_container {
     width: 100vw;
-    height: 90px;
+    height: 70px;
     background-color: rgb(255, 222, 197);
     display: flex;
     flex-direction: row;
@@ -61,7 +61,7 @@
     align-items: center;
   }
   .nav_container #logo img {
-    width: 160px;
+    width: 150px;
   }
   .nav_container #barra_lateral {
     background-color: transparent;
@@ -69,6 +69,9 @@
     position: absolute;
     right: 40px;
     cursor: pointer;
+  }
+  .nav_container #barra_lateral img {
+    width: 40px;
   }
   .nav_container .nav_sections {
     display: none;
