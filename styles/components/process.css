@@ -22,6 +22,8 @@
   list-style: none;
   display: flex;
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   color: #351C0A;
 }
@@ -34,7 +36,6 @@
   justify-content: flex-start;
   padding: 80px 20px;
   width: 20%;
-  height: 80vh;
   gap: 20px;
 }
 .process_container .process-contents .process h2 {
