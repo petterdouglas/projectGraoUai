@@ -250,4 +250,7 @@
     align-items: center;
     gap: 30px;
   }
+  .contacts .contacts_container .contacts-btn img {
+    width: 60px;
+  }
 }/*# sourceMappingURL=contacts.css.map */
