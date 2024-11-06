@@ -61,13 +61,13 @@
     align-items: center;
   }
   .nav_container #logo img {
-    width: 200px;
+    width: 160px;
   }
   .nav_container #barra_lateral {
     background-color: transparent;
     display: flex;
     position: absolute;
-    right: 30px;
+    right: 40px;
     cursor: pointer;
   }
   .nav_container .nav_sections {
@@ -145,7 +145,7 @@
     background-color: transparent;
     display: flex;
     position: absolute;
-    right: 20px;
+    right: 30px;
     cursor: pointer;
   }
   .nav_container #barra_lateral img {

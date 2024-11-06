@@ -224,20 +224,22 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 90%;
+    width: 95%;
     height: 450px;
-    padding: 30px;
+    padding: 35px 28px;
     border-radius: 30px;
     text-align: center;
     position: relative;
   }
   .comments_container .comment .comments-contents .aspas-top {
     position: absolute;
+    width: 24px;
     top: 20px;
     left: 20px;
   }
   .comments_container .comment .comments-contents .aspas-bottom {
     position: absolute;
+    width: 24px;
     bottom: 20px;
     right: 20px;
   }
@@ -257,9 +259,9 @@
     background-position: bottom;
   }
   .comments_container .comment1 h2 {
-    font-size: 20px;
+    font-size: 16px;
     color: #351C0A;
-    width: 100%;
+    width: 85%;
   }
   .comments_container .comment1 p {
     width: 100%;
@@ -283,9 +285,9 @@
     background-position: bottom;
   }
   .comments_container .comment2 h2 {
-    font-size: 20px;
+    font-size: 16px;
     color: #213022;
-    width: 80%;
+    width: 85%;
   }
   .comments_container .comment2 p {
     width: 100%;
