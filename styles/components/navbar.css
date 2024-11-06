@@ -82,7 +82,7 @@
     align-items: center;
     width: 50vw;
     position: absolute;
-    top: 90px;
+    top: 70px;
     right: 0;
     background-color: rgb(255, 222, 197);
     padding: 20px 30px 30px;
@@ -92,7 +92,7 @@
     text-align: center;
     flex-grow: 0;
     gap: 30px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .nav_container .nav_sections-active li {
     display: flex;
@@ -173,7 +173,7 @@
     text-align: center;
     flex-grow: 0;
     gap: 30px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .nav_container .nav_sections-active li {
     display: flex;
