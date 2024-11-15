@@ -15,7 +15,7 @@
   background-position: bottom;
 }
 .impacts_container .impacts-title {
-  font-family: "Adelia", sans-serif;
+  font-family: "adeliaregular", sans-serif;
   font-size: 50px;
 }
 .impacts_container .impacts-content {
@@ -80,7 +80,7 @@
     gap: 50px;
   }
   .impacts_container .impacts-title {
-    font-family: "Adelia", sans-serif;
+    font-family: "adeliaregular", sans-serif;
     font-size: 50px;
   }
   .impacts_container .impacts-content {
@@ -115,7 +115,7 @@
     background-position: bottom;
   }
   .impacts_container .impacts-title {
-    font-family: "Adelia", sans-serif;
+    font-family: "adeliaregular", sans-serif;
     text-align: center;
     font-size: 35px;
   }
