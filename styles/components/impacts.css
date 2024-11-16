@@ -163,6 +163,9 @@
     font-weight: 700;
     font-style: normal;
   }
+  .impacts_container .impacts-details li img {
+    width: 80px;
+  }
   .impacts_container .impacts-details #familias {
     background-color: rgb(164, 113, 65);
   }

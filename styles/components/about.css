@@ -60,10 +60,11 @@
   height: 260px;
 }
 .about_container .section_photos #img3 {
+  width: 260px;
   height: 540px;
 }
 
-@media (min-width: 760px) and (max-width: 1220px) {
+@media (min-width: 790px) and (max-width: 1300px) {
   .about_container {
     width: 100%;
     height: -moz-fit-content;
@@ -108,14 +109,14 @@
     align-items: center;
   }
   .about_container .section_photos .photos #img1, .about_container .section_photos .photos #img2 {
-    width: 35vw;
-    height: 240px;
+    width: 380px;
+    height: 260px;
   }
   .about_container .section_photos .photos #img3 {
     display: none;
   }
 }
-@media (min-width: 375px) and (max-width: 760px) {
+@media (min-width: 375px) and (max-width: 860px) {
   .about_container {
     width: 100%;
     height: -moz-fit-content;

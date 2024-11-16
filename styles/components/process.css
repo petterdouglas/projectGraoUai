@@ -168,11 +168,11 @@
     justify-content: flex-start;
     padding: 35px 20px;
     width: 45%;
-    height: 80vh;
-    gap: 20px;
+    height: 65vh;
+    gap: 10px;
   }
   .process_container .process-contents .process h2 {
-    font-size: 20px;
+    font-size: 18px;
     width: 90%;
   }
   .process_container .process-contents .process span {
@@ -181,7 +181,7 @@
   .process_container .process-contents .process .process--p {
     margin: auto;
     width: 90%;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
   .process_container .process-contents .process2, .process_container .process-contents .process4 {
