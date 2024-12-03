@@ -160,7 +160,7 @@
     gap: 30px;
   }
 }
-@media (min-width: 375px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 720px) {
   .contacts {
     display: flex;
     width: 100%;
