@@ -123,7 +123,7 @@
     margin-top: 30px;
   }
 }
-@media (min-width: 375px) and (max-width: 760px) {
+@media (min-width: 320px) and (max-width: 760px) {
   .process_container {
     width: 100%;
     height: -moz-fit-content;
