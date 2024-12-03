@@ -66,16 +66,19 @@
             font-size: 50px
         .impacts-content
             width: 80%
+            height: fit-content
             padding: 40px 50px
         .impacts-details
+            height: 320px
             li
+                height: 100%
                 width: 30%
                 h2
                     font-size: 16px
                 img
                     padding-left: 10px
 
-@media (min-width: 320px) and (max-width: 620px)
+@media (min-width: 420px) and (max-width: 620px)
     .impacts_container
         @include mixins.flex-center
         width: 100%
@@ -91,7 +94,7 @@
         .impacts-title
             @include mixins.adelia
             text-align: center
-            font-size: 35px
+            font-size: 32px
         .impacts-content
             background-color: variables.$dark_brown
             color: #ffffff
@@ -106,7 +109,7 @@
             justify-content: center
             align-items: center
             list-style: none
-            width: 100%
+            width: 60%
             height: fit-content
             gap: 24px
             li
@@ -121,7 +124,67 @@
                 border-radius: 30px
                 h2
                     width: 90%
-                    font-size: 20px
+                    font-size: 18px
+                p
+                    @include mixins.poppins-bold
+                img
+                    width: 80px
+            #familias
+                background-color: variables.$light_brown
+            #renda
+                background-color: variables.$brown
+                color: #ffffff
+            #producao
+                background-color: variables.$dark_brown
+                color: #ffffff
+
+@media (min-width: 320px) and (max-width: 420px)
+    .impacts_container
+        @include mixins.flex-center
+        width: 100%
+        height: fit-content
+        padding: 40px 30px 80px
+        flex-direction: column
+        align-content: center
+        gap: 26px
+        background-image: url('../../img/impactos-bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: bottom
+        .impacts-title
+            @include mixins.adelia
+            text-align: center
+            font-size: 28px
+        .impacts-content
+            background-color: variables.$dark_brown
+            color: #ffffff
+            @include mixins.poppins-medium
+            width: 100%
+            font-size: 12px
+            padding: 36px
+            border-radius: 30px
+        .impacts-details
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            list-style: none
+            width: 80%
+            height: fit-content
+            gap: 24px
+            li
+                @include mixins.flex-center
+                flex-direction: column
+                background-color: red
+                width: 80%
+                height: 240px
+                text-align: center
+                justify-content: space-evenly
+                padding: 10px
+                border-radius: 30px
+                h2
+                    width: 90%
+                    font-size: 16px
                 p
                     @include mixins.poppins-bold
                 img

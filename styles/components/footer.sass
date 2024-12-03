@@ -10,7 +10,7 @@
     p
         color: #ffffff
 
-@media (min-width: 320px) and (max-width: 720px)
+@media (min-width: 520px) and (max-width: 720px)
     .footer_container
         @include mixins.flex-center
         width: 100%
@@ -19,4 +19,15 @@
         background-color: variables.$dark_brown
         p
             font-size: 12px
+            color: #ffffff
+
+@media (min-width: 320px) and (max-width: 520px)
+    .footer_container
+        @include mixins.flex-center
+        width: 100%
+        height: fit-content
+        padding: 20px
+        background-color: variables.$dark_brown
+        p
+            font-size: 10px
             color: #ffffff

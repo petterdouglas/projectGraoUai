@@ -18,11 +18,12 @@
         display: none
     .nav_sections
         display: flex
-        justify-content: right
+        -webkit-justify-content: flex-end
         list-style: none
         gap: 60px
         flex-grow: 1
         font-size: 16px
+
         a
             @include mixins.poppins-semibold
             color: variables.$brown
@@ -52,7 +53,7 @@
             display: none
         .nav_sections
             display: flex
-            justify-content: right
+            -webkit-justify-content: flex-end
             list-style: none
             gap: 60px
             flex-grow: 1
@@ -86,11 +87,11 @@
             display: none
         .nav_sections
             display: flex
-            justify-content: right
+            -webkit-justify-content: flex-end
             list-style: none
-            gap: 30px
+            gap: 60px
             flex-grow: 1
-            font-size: 14px
+            font-size: 16px
             a
                 @include mixins.poppins-semibold
                 color: variables.$brown
@@ -101,7 +102,7 @@
                 &:hover
                     border-bottom: 2px solid
 
-@media (min-width: 320px) and (max-width: 780px)
+@media (min-width: 520px) and (max-width: 780px)
     .nav_container
         width: 100%
         height: 65px
@@ -133,6 +134,66 @@
             width: 70vw
             position: absolute
             top: 65px
+            right: 0
+            background-color: variables.$cream
+            padding: 20px 30px 30px
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            flex-grow: 0
+            gap: 30px
+            font-size: 14px
+            li
+                @include mixins.flex-center
+            a, li
+                width: 100%
+                height: 45px
+                @include mixins.poppins-semibold
+                color: variables.$brown
+                text-decoration: none
+                border-bottom: 2px solid transparent
+                transition: border-bottom 0.3s ease
+                &:hover
+                    border: none
+                    border-radius: 20px
+                    background-color: variables.$brown
+                    color: variables.$cream
+            a
+                @include mixins.flex-center
+
+@media (min-width: 320px) and (max-width: 520px)
+    .nav_container
+        width: 100%
+        height: 55px
+        background-color: variables.$cream
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0
+        position: fixed
+        z-index: 2
+        #logo
+            padding-left: 20px
+            @include mixins.flex-center
+            img
+                width: 120px
+        #barra_lateral
+            background-color: transparent
+            display: flex
+            position: absolute
+            right: 15px
+            cursor: pointer
+            img
+                width: 30px
+        .nav_sections
+            display: none
+        .nav_sections-active
+            @include mixins.flex-center
+            width: 70vw
+            position: absolute
+            top: 55px
             right: 0
             background-color: variables.$cream
             padding: 20px 30px 30px

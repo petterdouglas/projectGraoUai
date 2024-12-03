@@ -93,7 +93,7 @@
             .process4, .process5
                 margin-top: 30px
 
-@media (min-width: 320px) and (max-width: 760px)
+@media (min-width: 520px) and (max-width: 760px)
     .process_container
         width: 100%
         height: fit-content
@@ -146,3 +146,58 @@
                 background-color: variables.$cream
             .process3, .process4, .process5
                 margin-top: 30px
+
+
+@media (min-width: 320px) and (max-width: 520px)
+    .process_container
+        width: 100%
+        height: fit-content
+        padding: 0
+        @include mixins.flex-center
+        background-color: variables.$light_brown_opacity
+        flex-direction: column
+        text-align: center
+        .process-title
+            @include mixins.flex-center
+            flex-direction: column
+            width: 100%
+            font-size: 20px
+            padding: 20px 0 20px 0
+            line-height: 45px
+            color: variables.$dark_brown
+            margin: 30px 0 0
+        .process-contents
+            list-style: none
+            display: flex
+            width: 100%
+            padding: 0 0 40px 0
+            flex-wrap: wrap
+            justify-content: center
+            color: variables.$dark_brown
+            .process
+                @include mixins.flex-center
+                flex-direction: column
+                text-align: center
+                justify-content: flex-start
+                padding: 35px 20px
+                width: 70%
+                height: 65vh
+                gap: 10px
+                h2
+                    font-size: 16px
+                    width: 95%
+                span
+                    font-weight: bold
+                .process--p
+                    margin: auto
+                    width: 90%
+                    font-size: 12px
+                    text-align: center
+            .process2, .process4
+                color: variables.$cream
+                background-color: variables.$dark_brown
+            .process3, .process1, .process5
+                color: variables.$dark_brown
+                background-color: variables.$cream
+            .process1, .process2, .process3, .process4, .process5
+                margin-top: 20px

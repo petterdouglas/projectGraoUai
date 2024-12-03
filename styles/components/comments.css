@@ -199,7 +199,7 @@
     background-color: #516752;
   }
 }
-@media (min-width: 320px) and (max-width: 760px) {
+@media (min-width: 520px) and (max-width: 760px) {
   .comments_container {
     height: 750px;
   }
@@ -292,6 +292,120 @@
   .comments_container .comment2 p {
     width: 100%;
     font-size: 14px;
+    color: #ffffff;
+  }
+  .comments_container .comment2 span {
+    color: #213022;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .comments_container .comment2 .comments-contents2 {
+    background-color: #516752;
+  }
+  .comments_container .fade-transition {
+    transition: opacity 0.25s ease-in-out;
+  }
+  .comments_container .hidden {
+    opacity: 0.8;
+  }
+  .comments_container .visible {
+    opacity: 1;
+  }
+}
+@media (min-width: 320px) and (max-width: 520px) {
+  .comments_container {
+    height: 700px;
+  }
+  .comments_container .comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10px;
+    gap: 30px;
+  }
+  .comments_container .comment h1 {
+    font-family: "adeliaregular", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0.8px 0.8px black, -0.8px 0.8px black, 0.8px -0.8px black, -0.8px -0.8px black;
+  }
+  .comments_container .comment .comments-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 95%;
+    height: 450px;
+    padding: 35px 28px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+  }
+  .comments_container .comment .comments-contents .aspas-top {
+    position: absolute;
+    width: 24px;
+    top: 20px;
+    left: 20px;
+  }
+  .comments_container .comment .comments-contents .aspas-bottom {
+    position: absolute;
+    width: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .comments_container .comment .btn_container {
+    display: flex;
+    gap: 10px;
+  }
+  .comments_container .comment .btn_container .btn {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .comments_container .comment1 {
+    height: 100%;
+    background-image: url("../../img/depoimentos1-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .comments_container .comment1 h2 {
+    font-size: 14px;
+    color: #351C0A;
+    width: 85%;
+  }
+  .comments_container .comment1 p {
+    width: 100%;
+    font-size: 12px;
+    color: #ffffff;
+  }
+  .comments_container .comment1 span {
+    color: #351C0A;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .comments_container .comment1 .comments-contents1 {
+    background-color: rgb(164, 113, 65);
+  }
+  .comments_container .comment2 {
+    height: 100%;
+    background-image: url("../../img/depoimentos2-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .comments_container .comment2 h2 {
+    font-size: 14px;
+    color: #213022;
+    width: 85%;
+  }
+  .comments_container .comment2 p {
+    width: 100%;
+    font-size: 12px;
     color: #ffffff;
   }
   .comments_container .comment2 span {

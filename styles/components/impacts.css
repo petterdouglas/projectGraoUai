@@ -85,9 +85,15 @@
   }
   .impacts_container .impacts-content {
     width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 40px 50px;
   }
+  .impacts_container .impacts-details {
+    height: 320px;
+  }
   .impacts_container .impacts-details li {
+    height: 100%;
     width: 30%;
   }
   .impacts_container .impacts-details li h2 {
@@ -97,7 +103,7 @@
     padding-left: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 620px) {
+@media (min-width: 420px) and (max-width: 620px) {
   .impacts_container {
     display: flex;
     justify-content: center;
@@ -117,7 +123,7 @@
   .impacts_container .impacts-title {
     font-family: "adeliaregular", sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
   }
   .impacts_container .impacts-content {
     background-color: #351C0A;
@@ -136,7 +142,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 100%;
+    width: 60%;
     height: -moz-fit-content;
     height: fit-content;
     gap: 24px;
@@ -156,7 +162,88 @@
   }
   .impacts_container .impacts-details li h2 {
     width: 90%;
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .impacts_container .impacts-details li p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .impacts_container .impacts-details li img {
+    width: 80px;
+  }
+  .impacts_container .impacts-details #familias {
+    background-color: rgb(164, 113, 65);
+  }
+  .impacts_container .impacts-details #renda {
+    background-color: rgb(89, 59, 33);
+    color: #ffffff;
+  }
+  .impacts_container .impacts-details #producao {
+    background-color: #351C0A;
+    color: #ffffff;
+  }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  .impacts_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px 30px 80px;
+    flex-direction: column;
+    align-content: center;
+    gap: 26px;
+    background-image: url("../../img/impactos-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .impacts_container .impacts-title {
+    font-family: "adeliaregular", sans-serif;
+    text-align: center;
+    font-size: 28px;
+  }
+  .impacts_container .impacts-content {
+    background-color: #351C0A;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    font-size: 12px;
+    padding: 36px;
+    border-radius: 30px;
+  }
+  .impacts_container .impacts-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 24px;
+  }
+  .impacts_container .impacts-details li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    width: 80%;
+    height: 240px;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .impacts_container .impacts-details li h2 {
+    width: 90%;
+    font-size: 16px;
   }
   .impacts_container .impacts-details li p {
     font-family: "Poppins", sans-serif;
