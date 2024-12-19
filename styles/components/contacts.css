@@ -5,18 +5,21 @@
   height: fit-content;
   position: relative;
 }
+
 .contacts #ramo1 {
   position: absolute;
   bottom: -40px;
   left: 0;
   opacity: 80%;
 }
+
 .contacts #ramo2 {
   position: absolute;
   top: -40px;
   right: 0;
   opacity: 80%;
 }
+
 .contacts .contacts_container {
   width: 100%;
   display: flex;
@@ -28,6 +31,7 @@
   padding: 80px 0;
   color: #351C0A;
 }
+
 .contacts .contacts_container .contacts-contents {
   margin-top: 10px;
   display: flex;
@@ -36,10 +40,12 @@
   gap: 20px;
   width: 60%;
 }
+
 .contacts .contacts_container .contacts-contents h2 {
   font-size: 28px;
   margin-bottom: 10px;
 }
+
 .contacts .contacts_container .contacts-contents p {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -48,27 +54,32 @@
   width: 95%;
   font-size: 18px;
 }
+
 .contacts .contacts_container .contacts-contents .content1 {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .contacts .contacts_container .contacts-contents .content1 div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .contacts .contacts_container .contacts-contents .content2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
   text-align: end;
 }
+
 .contacts .contacts_container .contacts-contents .content2 div {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .contacts .contacts_container .contacts-btn {
   margin-top: 10px;
   display: flex;
@@ -85,6 +96,7 @@
     height: fit-content;
     position: relative;
   }
+
   .contacts #ramo1 {
     position: absolute;
     bottom: -40px;
@@ -92,6 +104,7 @@
     width: 180px;
     opacity: 80%;
   }
+
   .contacts #ramo2 {
     width: 180px;
     position: absolute;
@@ -99,6 +112,7 @@
     right: 0;
     opacity: 80%;
   }
+
   .contacts .contacts_container {
     width: 100%;
     display: flex;
@@ -110,6 +124,7 @@
     padding: 80px 0;
     color: #351C0A;
   }
+
   .contacts .contacts_container .contacts-contents {
     padding: 40px 0;
     margin-top: 10px;
@@ -119,10 +134,12 @@
     gap: 20px;
     width: 60%;
   }
+
   .contacts .contacts_container .contacts-contents h2 {
     font-size: 26px;
     margin-bottom: 10px;
   }
+
   .contacts .contacts_container .contacts-contents p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -131,27 +148,32 @@
     width: 95%;
     font-size: 16px;
   }
+
   .contacts .contacts_container .contacts-contents .content1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
+
   .contacts .contacts_container .contacts-contents .content1 div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contacts .contacts_container .contacts-contents .content2 {
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: end;
   }
+
   .contacts .contacts_container .contacts-contents .content2 div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
+
   .contacts .contacts_container .contacts-btn {
     margin-top: 10px;
     display: flex;
@@ -160,6 +182,7 @@
     gap: 30px;
   }
 }
+
 @media (min-width: 520px) and (max-width: 720px) {
   .contacts {
     display: flex;
@@ -168,6 +191,7 @@
     height: fit-content;
     position: relative;
   }
+
   .contacts #ramo1 {
     position: absolute;
     bottom: -20px;
@@ -175,6 +199,7 @@
     width: 120px;
     opacity: 80%;
   }
+
   .contacts #ramo2 {
     width: 120px;
     position: absolute;
@@ -182,6 +207,7 @@
     right: 0;
     opacity: 80%;
   }
+
   .contacts .contacts_container {
     width: 100%;
     height: -moz-fit-content;
@@ -195,6 +221,7 @@
     padding: 50px 0;
     color: #351C0A;
   }
+
   .contacts .contacts_container .contacts-contents {
     display: flex;
     flex-direction: column;
@@ -207,13 +234,16 @@
     gap: 20px;
     width: 60%;
   }
+
   .contacts .contacts_container .contacts-contents h2 {
     font-size: 22px;
     margin-bottom: 10px;
   }
+
   .contacts .contacts_container .contacts-contents #barra {
     display: none;
   }
+
   .contacts .contacts_container .contacts-contents p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -222,27 +252,32 @@
     width: 95%;
     font-size: 14px;
   }
+
   .contacts .contacts_container .contacts-contents .content1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   .contacts .contacts_container .contacts-contents .content1 div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contacts .contacts_container .contacts-contents .content2 {
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: start;
   }
+
   .contacts .contacts_container .contacts-contents .content2 div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contacts .contacts_container .contacts-btn {
     margin-top: 10px;
     display: flex;
@@ -250,10 +285,12 @@
     align-items: center;
     gap: 30px;
   }
+
   .contacts .contacts_container .contacts-btn img {
     width: 60px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 520px) {
   .contacts {
     display: flex;
@@ -262,6 +299,7 @@
     height: fit-content;
     position: relative;
   }
+
   .contacts #ramo1 {
     position: absolute;
     bottom: -30px;
@@ -269,6 +307,7 @@
     width: 100px;
     opacity: 80%;
   }
+
   .contacts #ramo2 {
     width: 100px;
     position: absolute;
@@ -276,6 +315,7 @@
     right: 0;
     opacity: 80%;
   }
+
   .contacts .contacts_container {
     width: 100%;
     height: -moz-fit-content;
@@ -289,12 +329,15 @@
     padding: 50px 0;
     color: #351C0A;
   }
+
   .contacts .contacts_container h1 {
     font-size: 30px;
   }
+
   .contacts .contacts_container img {
     width: 90px;
   }
+
   .contacts .contacts_container .contacts-contents {
     display: flex;
     flex-direction: column;
@@ -307,13 +350,16 @@
     gap: 20px;
     width: 60%;
   }
+
   .contacts .contacts_container .contacts-contents h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
+
   .contacts .contacts_container .contacts-contents #barra {
     display: none;
   }
+
   .contacts .contacts_container .contacts-contents p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -322,27 +368,32 @@
     width: 95%;
     font-size: 14px;
   }
+
   .contacts .contacts_container .contacts-contents .content1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   .contacts .contacts_container .contacts-contents .content1 div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contacts .contacts_container .contacts-contents .content2 {
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: start;
   }
+
   .contacts .contacts_container .contacts-contents .content2 div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contacts .contacts_container .contacts-btn {
     margin-top: 10px;
     display: flex;
@@ -350,7 +401,10 @@
     align-items: center;
     gap: 30px;
   }
+
   .contacts .contacts_container .contacts-btn img {
     width: 50px;
   }
-}/*# sourceMappingURL=contacts.css.map */
+}
+
+/*# sourceMappingURL=contacts.css.map */

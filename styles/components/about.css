@@ -5,7 +5,7 @@
   background-color: #351C0A;
   padding: 80px 20px;
   display: flex;
-  justify-content: right;
+  justify-content: space-evenly;
   align-items: center;
 }
 .about_container .section_content {
@@ -21,8 +21,7 @@
   text-align: justify;
   box-shadow: 20px 20px 0 rgb(164, 113, 65);
   z-index: 1;
-  position: absolute;
-  left: 50px;
+  position: relative;
 }
 .about_container .section_content h2 {
   color: rgb(164, 113, 65);
@@ -40,28 +39,28 @@
 .about_container .section_photos {
   position: relative;
   z-index: 0;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   height: -moz-fit-content;
   height: fit-content;
   width: 30%;
-  justify-content: right;
+  justify-content: center;
   gap: 16px;
 }
 .about_container .section_photos .photos {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 16px;
 }
 .about_container .section_photos img {
-  width: 280px;
-}
-.about_container .section_photos #img1, .about_container .section_photos #img2 {
-  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0px 16px 16px 0px;
 }
 .about_container .section_photos #img3 {
-  width: 260px;
-  height: 540px;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 790px) and (max-width: 1300px) {
@@ -109,8 +108,10 @@
     align-items: center;
   }
   .about_container .section_photos .photos #img1, .about_container .section_photos .photos #img2 {
-    width: 380px;
+    width: 45%;
     height: 260px;
+    object-fit: cover;
+    object-position: center;
   }
   .about_container .section_photos .photos #img3 {
     display: none;

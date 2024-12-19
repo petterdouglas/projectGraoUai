@@ -8,6 +8,7 @@
   padding: 35px;
   background-color: #351C0A;
 }
+
 .footer_container p {
   color: #ffffff;
 }
@@ -23,11 +24,13 @@
     padding: 30px;
     background-color: #351C0A;
   }
+
   .footer_container p {
     font-size: 12px;
     color: #ffffff;
   }
 }
+
 @media (min-width: 320px) and (max-width: 520px) {
   .footer_container {
     display: flex;
@@ -39,8 +42,11 @@
     padding: 20px;
     background-color: #351C0A;
   }
+
   .footer_container p {
     font-size: 10px;
     color: #ffffff;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */
