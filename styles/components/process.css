@@ -236,8 +236,8 @@
     text-align: center;
     justify-content: flex-start;
     padding: 35px 20px;
-    width: 70%;
-    height: 65vh;
+    width: 60%;
+    height: 400px;
     gap: 10px;
   }
   .process_container .process-contents .process h2 {
